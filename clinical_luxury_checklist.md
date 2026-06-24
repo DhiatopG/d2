@@ -11,7 +11,7 @@ This checklist outlines the steps to build the frontend-only, modern, clinical l
 
 ## 2. Visual Identity & Styling Base (`index.css`)
 - [x] Define CSS Custom Properties (Variables):
-  - Primary Background (Deep Navy): `#0B1F3A`
+  - Primary Background (Obsidian Black): `#121316`
   - Accent Color (Gold): `#C9A84C`
   - Surface & Text (Pure White): `#FFFFFF`
   - Muted Text (Muted White/Silver): `rgba(255, 255, 255, 0.7)` or `#E0E0E0`
