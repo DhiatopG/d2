@@ -1,22 +1,31 @@
 /* Custom Properties & Design Tokens */
 :root {
-    --primary-bg: #FAF9F5;        /* Soothing Cream */
-    --accent-color: #C3A469;      /* Warm Champagne Gold */
-    --text-light: #FFFFFF;        /* Pure White (on gold bg / hover) */
-    --text-muted: rgba(42, 51, 44, 0.6);  /* Muted Charcoal Sage */
-    --bg-light: #E2E8E4;          /* Soft Sage Green Section/Surface */
-    --text-dark: #2A332C;         /* Soft Charcoal Sage Text */
+    --primary-bg: #FAF9F5;
+    /* Soothing Cream */
+    --accent-color: #C3A469;
+    /* Warm Champagne Gold */
+    --text-light: #FFFFFF;
+    /* Pure White (on gold bg / hover) */
+    --text-muted: rgba(42, 51, 44, 0.6);
+    /* Muted Charcoal Sage */
+    --bg-light: #E2E8E4;
+    /* Soft Sage Green Section/Surface */
+    --text-dark: #2A332C;
+    /* Soft Charcoal Sage Text */
     --text-dark-muted: rgba(42, 51, 44, 0.7);
 
     --font-serif: 'Playfair Display', serif;
     --font-sans: 'Inter', sans-serif;
-    
+
     --transition-speed: 0.3s;
-    --card-shadow: 0 10px 30px rgba(42, 51, 44, 0.08); /* Softened shadow */
+    --card-shadow: 0 10px 30px rgba(42, 51, 44, 0.08);
+    /* Softened shadow */
 }
 
 /* CSS Reset & General Base Styles */
-*, *::before, *::after {
+*,
+*::before,
+*::after {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
@@ -37,19 +46,36 @@ body {
 }
 
 /* Typography Base */
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     font-family: var(--font-serif);
     font-weight: 400;
     line-height: 1.2;
 }
 
 /* Global Rules: No rounded corners on any elements */
-button, input, select, textarea, a, div, section, article, span, img, li {
+button,
+input,
+select,
+textarea,
+a,
+div,
+section,
+article,
+span,
+img,
+li {
     border-radius: 0 !important;
 }
 
 /* Global Rules: Strictly no gradients */
-*, *::before, *::after {
+*,
+*::before,
+*::after {
     background-image: none !important;
 }
 
@@ -100,7 +126,8 @@ button {
 }
 
 .section-padding {
-    padding: 8rem 0; /* Generous editorial white space */
+    padding: 8rem 0;
+    /* Generous editorial white space */
 }
 
 @media (max-width: 768px) {
@@ -209,7 +236,7 @@ button {
     .mobile-toggle {
         display: flex;
     }
-    
+
     .nav-menu {
         position: fixed;
         top: 0;
@@ -224,17 +251,17 @@ button {
         z-index: 105;
         padding: 2rem;
     }
-    
+
     .nav-menu.active {
         right: 0;
     }
-    
+
     .nav-list {
         flex-direction: column;
         align-items: center;
         gap: 2rem;
     }
-    
+
     .nav-link {
         font-size: 1.1rem;
     }
@@ -249,7 +276,7 @@ button {
         transform: translateY(6.5px) rotate(45deg);
         background-color: var(--accent-color);
     }
-    
+
     .mobile-toggle[aria-expanded="true"] .line:nth-child(2) {
         transform: translateY(-6.5px) rotate(-45deg);
         background-color: var(--accent-color);
@@ -277,7 +304,8 @@ button {
     flex: 1;
     display: flex;
     align-items: center;
-    padding: 10rem 4rem 6rem 4rem; /* generously offset for transparent nav */
+    padding: 10rem 4rem 6rem 4rem;
+    /* generously offset for transparent nav */
 }
 
 .hero-content {
@@ -343,7 +371,8 @@ button {
 .trust-bar {
     width: 100%;
     background-color: var(--primary-bg);
-    border-top: 1px solid rgba(195, 164, 105, 0.25); /* Thin gold border opacity */
+    border-top: 1px solid rgba(195, 164, 105, 0.25);
+    /* Thin gold border opacity */
     border-bottom: 1px solid rgba(195, 164, 105, 0.25);
     padding: 2.5rem 2rem;
     z-index: 10;
@@ -387,7 +416,8 @@ button {
 .trust-divider {
     width: 1px;
     height: 45px;
-    background-color: rgba(195, 164, 105, 0.4); /* Muted gold vertical divider */
+    background-color: rgba(195, 164, 105, 0.4);
+    /* Muted gold vertical divider */
 }
 
 /* Responsive Hero & Trust Bar */
@@ -402,41 +432,43 @@ button {
         flex-direction: column;
         min-height: auto;
     }
-    
+
     .hero-left {
         padding: 8rem 2rem 4rem 2rem;
     }
-    
+
     .hero-content {
         margin: 0;
         max-width: 100%;
     }
-    
+
     .hero-title {
         font-size: 2.4rem;
     }
-    
+
     .hero-right {
         height: 500px;
         width: 100%;
     }
-    
+
     .trust-bar-container {
         flex-direction: column;
         gap: 2rem;
     }
-    
+
     .trust-divider {
         width: 60px;
         height: 1px;
     }
 }
+
 /* ==========================================
    Footer
    ========================================== */
 
 .footer {
-    background-color: #2A332C; /* Charcoal Sage — rich bookend to the cream body */
+    background-color: #2A332C;
+    /* Charcoal Sage — rich bookend to the cream body */
     color: rgba(250, 249, 245, 0.85);
 }
 
@@ -614,7 +646,8 @@ button {
 
 /* Section wrapper */
 .seo-block {
-    background-color: var(--bg-light); /* Soft Sage #E2E8E4 */
+    background-color: var(--bg-light);
+    /* Soft Sage #E2E8E4 */
 }
 
 /* Section header */
@@ -662,14 +695,15 @@ button {
 .seo-card {
     background-color: #FFFFFF;
     border: 1px solid rgba(42, 51, 44, 0.08);
-    border-radius: 8px !important; /* Override global sharp-corner rule for cards only */
+    border-radius: 8px !important;
+    /* Override global sharp-corner rule for cards only */
     padding: 3rem 2.5rem;
     box-shadow: 0 4px 20px rgba(42, 51, 44, 0.07);
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     transition: box-shadow var(--transition-speed) ease,
-                transform var(--transition-speed) ease;
+        transform var(--transition-speed) ease;
 }
 
 .seo-card:hover {
@@ -722,7 +756,7 @@ button {
     text-decoration: none;
     border-bottom: 1px solid transparent;
     transition: border-color var(--transition-speed) ease,
-                color var(--transition-speed) ease;
+        color var(--transition-speed) ease;
 }
 
 .seo-card-link:hover {
@@ -743,4 +777,24 @@ button {
     .seo-block-header {
         margin-bottom: 2.5rem;
     }
+}
+
+/* Map Section */
+.map-section {
+    width: 100%;
+    background-color: var(--primary-bg);
+}
+
+.map-container {
+    width: 100%;
+    height: 350px;
+    position: relative;
+    border-top: 1px solid rgba(42, 51, 44, 0.08);
+    border-bottom: 1px solid rgba(42, 51, 44, 0.08);
+}
+
+.map-container iframe {
+    width: 100%;
+    height: 100%;
+    display: block;
 }
