@@ -23,4 +23,25 @@ document.addEventListener('DOMContentLoaded', () => {
             });
         });
     }
+
+    // ── Consultation form — client-side submit handler ──────────────────────
+    const consultForm = document.querySelector('.consult-form');
+    const consultSuccess = document.querySelector('.consult-success');
+
+    if (consultForm && consultSuccess) {
+        consultForm.addEventListener('submit', (e) => {
+            e.preventDefault();
+
+            // Hide form, reveal success message
+            consultForm.style.display = 'none';
+            consultSuccess.style.display = 'flex';
+
+            // Auto-reset after 8 seconds
+            setTimeout(() => {
+                consultForm.reset();
+                consultForm.style.display = 'flex';
+                consultSuccess.style.display = 'none';
+            }, 8000);
+        });
+    }
 });
