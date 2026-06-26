@@ -138,11 +138,12 @@ button {
 
 /* Header & Navigation */
 .header {
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     z-index: 100;
+    background-color: var(--primary-bg);
     border-bottom: 1px solid rgba(42, 51, 44, 0.08);
 }
 
@@ -304,17 +305,18 @@ button {
     flex: 1;
     display: flex;
     align-items: center;
+    justify-content: center;
     padding: 10rem 4rem 6rem 4rem;
     /* generously offset for transparent nav */
 }
 
 .hero-content {
-    max-width: 580px;
-    margin-left: auto;
-    margin-right: 2rem;
+    max-width: 800px;
+    margin: 0 auto;
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
+    text-align: center;
 }
 
 .gold-line {
@@ -340,11 +342,11 @@ button {
     font-weight: 300;
     margin-bottom: 3rem;
     letter-spacing: 0.02em;
-    max-width: 480px;
+    max-width: 580px;
 }
 
 .hero-cta {
-    align-self: flex-start;
+    align-self: center;
 }
 
 .hero-right {

@@ -14,9 +14,10 @@ document.addEventListener('DOMContentLoaded', () => {
             document.body.style.overflow = !isExpanded ? 'hidden' : '';
         });
 
-        // Close menu when a link is clicked
-        navLinks.forEach(link => {
-            link.addEventListener('click', () => {
+        // Close menu when a link or button is clicked
+        const menuItems = navMenu.querySelectorAll('.nav-link, .nav-btn');
+        menuItems.forEach(item => {
+            item.addEventListener('click', () => {
                 mobileToggle.setAttribute('aria-expanded', 'false');
                 navMenu.classList.remove('active');
                 document.body.style.overflow = '';
