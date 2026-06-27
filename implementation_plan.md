@@ -20,4 +20,4 @@ Remove obsolete CSS styles from `index.css` to keep the codebase tidy:
 Verify the layout, style compilation, and navigation functionality:
 - Ensure the dev server runs without errors.
 - Confirm the old, duplicate sections are gone.
-- Test that header and footer navigation links scroll smoothly to the new cards.
+- Test that header and footer navigation links scroll smoothly to the new cards. 
