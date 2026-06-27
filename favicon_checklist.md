@@ -64,24 +64,22 @@ Insert **after** `<link rel="canonical" …>` and **before** `<title>` in `index
 
 ---
 
-## Phase 3 — Build & Verify
-
-- [ ] **3.1** Run `npm run build`
-- [ ] **3.2** Confirm favicon files are copied to `dist/`:
+- [x] **3.1** Run `npm run build`
+- [x] **3.2** Confirm favicon files are copied to `dist/`:
   - `dist/favicon.ico`
   - `dist/favicon-16x16.png`
   - `dist/favicon-32x32.png`
   - `dist/apple-touch-icon.png`
-- [ ] **3.3** Run `npm run preview` and confirm `/favicon.ico` returns HTTP 200
-- [ ] **3.4** Hard-refresh browser tab and confirm clinic logo appears (favicons are aggressively cached)
-- [ ] **3.5** ~~Browser testing on multiple devices~~ *(skipped per user instruction)*
+- [x] **3.3** Run `npm run preview` and confirm `/favicon.ico` returns HTTP 200
+- [x] **3.4** Hard-refresh browser tab and confirm clinic logo appears (favicons are aggressively cached)
+- [x] **3.5** ~~Browser testing on multiple devices~~ *(skipped per user instruction)*
 
 ---
 
 ## Phase 4 — Documentation
 
-- [ ] **4.1** Add completed row to SEO work log in `.agents/PROJECT_CONTEXT.md`
-- [ ] **4.2** Update "Key Files & Paths" section in `PROJECT_CONTEXT.md` to list new favicon files under `public/`
+- [x] **4.1** Add completed row to SEO work log in `.agents/PROJECT_CONTEXT.md`
+- [x] **4.2** Update "Key Files & Paths" section in `PROJECT_CONTEXT.md` to list new favicon files under `public/`
 
 ---
 

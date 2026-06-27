@@ -44,6 +44,10 @@ c:\Users\dell\d2\
 ├── public\
 │   ├── logo.svg        ← Logo used in <img> in the header (stays SVG)
 │   ├── og-image.png    ← Social share image — 1200×630 px, white bg, 577 KB
+│   ├── favicon.ico     ← Legacy multi-size favicon fallback
+│   ├── favicon-16x16.png ← 16x16 PNG favicon for browser tabs
+│   ├── favicon-32x32.png ← 32x32 PNG favicon for desktop browser tabs
+│   ├── apple-touch-icon.png ← 180x180 PNG apple touch icon
 │   ├── robots.txt
 │   └── sitemap.xml
 ├── assets\
@@ -79,6 +83,10 @@ c:\Users\dell\d2\
 <meta name="twitter:image:alt" content="Cabinet dentaire Dr Rezgui Houssem – Logo sur fond blanc">
 
 <link rel="canonical" href="https://www.smilevip.net/" />
+<link rel="icon" href="/favicon.ico?v=2" sizes="any">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png?v=2">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png?v=2">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png?v=2">
 <title>…</title>
 <link rel="stylesheet" href="index.css">
 
@@ -99,6 +107,7 @@ c:\Users\dell\d2\
 | 5 | Untrack `dist/` from Git + fix build workflow | `dist_build_fix_checklist.md` | ✅ Complete |
 | 6 | Fix `index.js` 404 in production (add `type="module"`) | `dist_js_404_fix_checklist.md` | ✅ Complete |
 | 7 | Add Open Graph + Twitter Card meta tags | `og_twitter_meta_checklist.md` | ✅ Phases 1–4 complete · Phase 5 (build & validate) pending |
+| 8 | Add favicon links & assets | `favicon_checklist.md` | ✅ Complete |
 
 ---
 
