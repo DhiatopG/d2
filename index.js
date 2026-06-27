@@ -46,3 +46,19 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 });
+
+// ── Deferred Google Maps iframe — load after hero paints ─────────────────
+(function () {
+    function loadMap() {
+        const iframe = document.querySelector('.map-container iframe[data-src]');
+        if (!iframe) return;
+        iframe.src = iframe.dataset.src;
+        iframe.removeAttribute('data-src');
+    }
+
+    if ('requestIdleCallback' in window) {
+        requestIdleCallback(loadMap, { timeout: 3000 });
+    } else {
+        setTimeout(loadMap, 2500);
+    }
+})();
