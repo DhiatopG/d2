@@ -106,16 +106,15 @@ c:\Users\dell\d2\
 | 4 | Add SEO two-card block (HTML + CSS) below hero | `seo_block_checklist.md` | ✅ Complete |
 | 5 | Untrack `dist/` from Git + fix build workflow | `dist_build_fix_checklist.md` | ✅ Complete |
 | 6 | Fix `index.js` 404 in production (add `type="module"`) | `dist_js_404_fix_checklist.md` | ✅ Complete |
-| 7 | Add Open Graph + Twitter Card meta tags | `og_twitter_meta_checklist.md` | ✅ Phases 1–4 complete · Phase 5 (build & validate) pending |
+| 7 | Add Open Graph + Twitter Card meta tags | `og_twitter_meta_checklist.md` | ✅ Complete |
 | 8 | Add favicon links & assets | `favicon_checklist.md` | ✅ Complete |
+| 9 | Integrate Google Reviews via Featurable API | — | ✅ Complete (fixed v1 response parsing + field mapping) |
 
 ---
 
 ## Open Items / Pending Work
 
-- [ ] **Phase 5** of `og_twitter_meta_checklist.md` — run `npm run build`, deploy, then validate with Facebook Sharing Debugger, Twitter Card Validator, LinkedIn Inspector
-- [ ] **Twitter/X handle** — `twitter:site` tag was omitted because no handle was confirmed. Add `<meta name="twitter:site" content="@yourhandle">` if an account exists.
-- [ ] **Google Rich Results Test** — validate JSON-LD Dentist schema once deployed (from `jsonld_schema_checklist.md`)
+*(Aucun élément en attente — tous les travaux planifiés sont terminés)*
 
 ---
 
@@ -132,4 +131,11 @@ c:\Users\dell\d2\
 
 ---
 
-*Last updated: 2026-06-27*
+*Last updated: 2026-06-28*
+
+### Reviews integration notes
+- Uses Featurable **v1** public endpoint: `GET /api/v1/widgets/:widgetId`
+- Reviews are at `data.reviews` (not `data.widget.reviews`); v1 review fields are normalized in `index.js`
+- Carousel shows 3/2/1 cards per page (desktop/tablet/mobile) with prev/next arrows; all API reviews are loaded
+- Each card: Google profile photo, relative French date, full text, yellow stars bottom-left, Google G logo bottom-right
+- Widget ID is set via `VITE_FEATURABLE_WIDGET_ID` in `.env` (see `.env.example`); restart dev server after changing `.env`

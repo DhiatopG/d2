@@ -134,18 +134,18 @@ Optionally update it to include the new raster image for richer results.
 
 ## Phase 5 — Build & Verify
 
-- [ ] **5.1** Run `npm run build` to regenerate `dist/` and confirm `og-image.png` is copied to `dist/`
-- [ ] **5.2** Deploy to production (or staging at `https://www.smilevip.net/`)
-- [ ] **5.3** Validate with **Facebook Sharing Debugger**:  
+- [x] **5.1** Run `npm run build` to regenerate `dist/` and confirm `og-image.png` is copied to `dist/`
+- [x] **5.2** Deploy to production (or staging at `https://www.smilevip.net/`)
+- [x] **5.3** Validate with **Facebook Sharing Debugger**:  
   `https://developers.facebook.com/tools/debug/?q=https://www.smilevip.net/`
-- [ ] **5.4** Validate with **Twitter Card Validator**:  
+- [x] **5.4** Validate with **Twitter Card Validator**:  
   `https://cards-dev.twitter.com/validator` *(requires login)*
-- [ ] **5.5** Validate with **LinkedIn Post Inspector**:  
+- [x] **5.5** Validate with **LinkedIn Post Inspector**:  
   `https://www.linkedin.com/post-inspector/inspect/https://www.smilevip.net/`
-- [ ] **5.6** Validate with **OpenGraph.xyz**:  
+- [x] **5.6** Validate with **OpenGraph.xyz**:  
   `https://www.opengraph.xyz/url/https://www.smilevip.net/`
-- [ ] **5.7** Confirm the preview image, title, and description render correctly on all validators
-- [ ] **5.8** Click "Scrape Again" on the Facebook Debugger to force-refresh its cache
+- [x] **5.7** Confirm the preview image, title, and description render correctly on all validators
+- [x] **5.8** Click "Scrape Again" on the Facebook Debugger to force-refresh its cache
 
 ---
 
