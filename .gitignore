@@ -1,4 +1,9 @@
 node_modules/
 dist/
-.DS_Store
+.next/
+out/
 .env
+.env.local
+.env*.local
+.DS_Store
+next-temp/
