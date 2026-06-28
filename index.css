@@ -1207,6 +1207,7 @@ button {
     display: flex;
     gap: 1.25rem;
     transition: transform 0.4s ease;
+    position: relative;
 }
 
 .reviews-carousel-btn {
