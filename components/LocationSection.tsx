@@ -40,7 +40,7 @@ export default function LocationSection() {
             style={{ border: 0 }}
             allowFullScreen
             referrerPolicy="strict-origin-when-cross-origin"
-            aria-label="Aurelia Clinic Location Map"
+            aria-label="Cabinet dentaire Dr rezgui Houssem Location Map"
           />
         </div>
       </section>

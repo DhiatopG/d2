@@ -5,13 +5,13 @@ import WhatsAppFab from '@/components/WhatsAppFab';
 import './globals.css';
 
 export const metadata: Metadata = {
-  title: 'Le Meilleur Dentiste Tunis - si vous cherchez des Implants Dentaires près de chez vous - Cabinet dentaire Dr Rezgui Houssem est l\'endroit qu\'il vous faut',
-  description: 'Vous méritez un dentiste de confiance à Tunis. Chez le Cabinet Dr Rezgui Houssem, vous êtes entre les mains d\'un professionnel qualifié. Prenez rendez-vous dès aujourd\'hui !',
+  title: 'Le Meilleur Dentiste Tunis - si vous cherchez des Implants Dentaires près de chez vous - Cabinet dentaire Dr rezgui Houssem est l\'endroit qu\'il vous faut',
+  description: 'Vous méritez un dentiste de confiance à Tunis. Chez le Cabinet dentaire Dr rezgui Houssem, vous êtes entre les mains d\'un professionnel qualifié. Prenez rendez-vous dès aujourd\'hui !',
   alternates: {
     canonical: 'https://www.smilevip.net/',
   },
   openGraph: {
-    title: 'Le Meilleur Dentiste Tunis – Cabinet Dr Rezgui Houssem',
+    title: 'Le Meilleur Dentiste Tunis – Cabinet dentaire Dr rezgui Houssem',
     type: 'website',
     url: 'https://www.smilevip.net/',
     images: [
@@ -21,14 +21,14 @@ export const metadata: Metadata = {
         height: 630,
       },
     ],
-    description: 'Vous méritez un dentiste de confiance à Tunis. Chez le Cabinet Dr Rezgui Houssem, vous êtes entre les mains d\'un professionnel qualifié. Prenez rendez-vous dès aujourd\'hui !',
+    description: 'Vous méritez un dentiste de confiance à Tunis. Chez le Cabinet dentaire Dr rezgui Houssem, vous êtes entre les mains d\'un professionnel qualifié. Prenez rendez-vous dès aujourd\'hui !',
     locale: 'fr_TN',
-    siteName: 'Cabinet dentaire Dr Rezgui Houssem',
+    siteName: 'Cabinet dentaire Dr rezgui Houssem',
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Le Meilleur Dentiste Tunis – Cabinet Dr Rezgui Houssem',
-    description: 'Vous méritez un dentiste de confiance à Tunis. Chez le Cabinet Dr Rezgui Houssem, vous êtes entre les mains d\'un professionnel qualifié. Prenez rendez-vous dès aujourd\'hui !',
+    title: 'Le Meilleur Dentiste Tunis – Cabinet dentaire Dr rezgui Houssem',
+    description: 'Vous méritez un dentiste de confiance à Tunis. Chez le Cabinet dentaire Dr rezgui Houssem, vous êtes entre les mains d\'un professionnel qualifié. Prenez rendez-vous dès aujourd\'hui !',
     images: ['https://www.smilevip.net/og-image.png'],
   },
   icons: {
@@ -40,7 +40,7 @@ export const metadata: Metadata = {
     apple: [{ url: '/apple-touch-icon.png?v=2' }],
   },
   other: {
-    'twitter:image:alt': 'Cabinet dentaire Dr Rezgui Houssem – Logo sur fond blanc',
+    'twitter:image:alt': 'Cabinet dentaire Dr rezgui Houssem – Logo sur fond blanc',
   },
 };
 

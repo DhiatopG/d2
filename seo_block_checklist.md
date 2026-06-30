@@ -1,6 +1,6 @@
 # SEO Block — Implementation Checklist
 
-Two-section SEO block with cards placed below the hero section on the Aurelia Clinic homepage.
+Two-section SEO block with cards placed below the hero section on the Cabinet dentaire Dr rezgui Houssem homepage.
 
 ---
 

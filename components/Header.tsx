@@ -17,7 +17,7 @@ export default function Header() {
     <header className="header">
       <div className="nav-container">
         <a href="#" className="logo" onClick={close}>
-          <img src="/logo.svg" alt="Aurelia Clinic Logo" className="logo-img" />
+          <img src="/logo.svg" alt="Cabinet dentaire Dr rezgui Houssem Logo" className="logo-img" />
         </a>
         <button
           className="mobile-toggle"
